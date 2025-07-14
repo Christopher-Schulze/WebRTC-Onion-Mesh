@@ -51,33 +51,11 @@ This project implements a peer-to-peer overlay network that combines WebRTC for 
 - **Scalability**: The DHT-based design scales to millions of nodes with logarithmic routing complexity.
 
 ## Project Status
-This is an active development project with core networking components implemented in Rust. The current implementation includes:
+This is an early-stage research and development project. The following components are currently under active development:
 
-- [x] Basic WebRTC transport layer
-- [x] Onion routing with Sphinx packet format
-- [x] Distributed hash table for peer discovery
-- [x] Chunk-based data distribution
-- [ ] Complete WebAssembly integration
-- [ ] Advanced traffic analysis resistance
-- [ ] Formal security proofs
+- WebRTC transport layer (in progress)
+- Onion routing implementation (planning phase)
+- Network protocol design (in progress)
+- Basic peer discovery (planned)
 
-## Getting Started
-For development and testing:
-
-1. Install Rust toolchain (stable)
-2. Clone the repository
-3. Run `cargo build --release`
-4. Execute the example applications in the `examples/` directory
-
-Detailed documentation is available in the `docs/` directory.
-
-## Contributing
-We welcome contributions in the following areas:
-
-- Performance optimization
-- Security auditing
-- WebAssembly integration
-- Testing and benchmarking
-- Documentation improvements
-
-Please read `CONTRIBUTING.md` for development guidelines and code submission process.
+Note: The project is not yet in a buildable or testable state. Please check back later for updates on development progress.
