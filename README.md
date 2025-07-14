@@ -1,12 +1,12 @@
-# Decentralized Privacy Network
+# WebRTC-based Onion Routing Mesh Network
 
-This project implements a peer-to-peer overlay network with a focus on privacy and security. It builds upon established anonymity principles while incorporating modern web technologies for improved accessibility and performance.
+This project implements a peer-to-peer overlay network that combines WebRTC for efficient data transmission with onion routing for enhanced privacy. The network is designed to be resilient and scalable while maintaining strong privacy guarantees through multi-hop traffic encryption.
 
 ## Core Components
 
-*   **Overlay Network Architecture:** Implements a virtual network on top of existing internet infrastructure, enabling flexible routing and enhanced privacy through traffic obfuscation.
+*   **WebRTC Transport Layer:** Leverages WebRTC for direct peer-to-peer communication, enabling efficient data transfer with low latency. WebRTC's NAT traversal capabilities help establish connections even behind restrictive network configurations.
 
-*   **WebRTC Transport Layer:** Utilizes WebRTC (Web Real-Time Communication) for data transmission, providing low-latency connections. WebRTC traffic blends with standard web traffic, making it more resistant to detection and blocking.
+*   **Onion Routing Network:** Implements a multi-hop routing system where traffic is encrypted in layers, similar to the Tor network, ensuring that no single node can determine both the source and destination of communications.
 
 *   **WebPush Integration:** Enables connection establishment in restricted network environments by leveraging WebPush notifications for peer discovery and connection initiation.
 
