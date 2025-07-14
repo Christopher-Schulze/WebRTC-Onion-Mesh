@@ -1,0 +1,70 @@
+[workspace]
+members = [
+    "core",
+    "transport",
+    "signaling",
+    "onion",
+    "examples"
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["zMesh Team"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/zMesh/zMesh"
+description = "Decentralized, self-healing P2P overlay network with 2-hop onion routing"
+
+[workspace.dependencies]
+# Crypto
+ring = "0.17"
+chacha20poly1305 = "0.10"
+aes-gcm = "0.10"
+rand = "0.8"
+rand_core = "0.6"
+
+# Networking
+tokio = { version = "1.0", features = ["full"] }
+webrtc = "0.7"
+tokio-tungstenite = "0.20"
+futures = "0.3"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+bincode = "1.3"
+postcard = "1.0"
+toml = "0.8"
+
+# Error handling
+thiserror = "1.0"
+anyhow = "1.0"
+
+# Async
+async-trait = "0.1"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+# WASM
+wasm-bindgen = "0.2"
+wasm-bindgen-futures = "0.4"
+js-sys = "0.3"
+web-sys = "0.3"
+
+# Utils
+bytes = { version = "1.0", features = ["serde"] }
+uuid = { version = "1.0", features = ["v4", "serde"] }
+once_cell = "1.0"
+parking_lot = "0.12"
+base32 = "0.4"
+crossbeam-queue = "0.3"
+sha3 = "0.10"
+
+# FEC
+reed-solomon-erasure = "6.0"
+
+# Testing
+tokio-test = "0.4"
+proptest = "1.0"
