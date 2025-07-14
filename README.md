@@ -51,11 +51,16 @@ This project implements a peer-to-peer overlay network that combines WebRTC for 
 - **Scalability**: The DHT-based design scales to millions of nodes with logarithmic routing complexity.
 
 ## Project Status
-This is an early-stage research and development project. The following components are currently under active development:
+This repository serves as a **Proof of Concept (PoC)** to document and share the architectural vision for a WebRTC-based onion routing network. The primary goals are:
 
-- WebRTC transport layer (in progress)
-- Onion routing implementation (planning phase)
-- Network protocol design (in progress)
-- Basic peer discovery (planned)
+1. To explore the feasibility of combining WebRTC with onion routing principles
+2. To document the architectural decisions and design patterns
+3. To serve as a foundation for potential future implementation efforts
 
-Note: The project is not yet in a buildable or testable state. Please check back later for updates on development progress.
+### Current State
+- Conceptual design phase
+- Architecture documentation in progress
+- No functional implementation exists yet
+
+### Note
+This is not a production-ready system, but rather a collection of architectural ideas and design patterns. The implementation details and specifications are subject to change as the concept evolves.
